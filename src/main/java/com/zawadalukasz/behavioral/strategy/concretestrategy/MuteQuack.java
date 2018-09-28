@@ -1,4 +1,6 @@
-package com.zawadalukasz.behavioral.strategy;
+package com.zawadalukasz.behavioral.strategy.concretestrategy;
+
+import com.zawadalukasz.behavioral.strategy.abstractstrategy.QuackBehavior;
 
 public class MuteQuack implements QuackBehavior {
     @Override

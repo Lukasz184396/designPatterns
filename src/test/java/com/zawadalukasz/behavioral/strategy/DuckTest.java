@@ -1,5 +1,7 @@
 package com.zawadalukasz.behavioral.strategy;
 
+import com.zawadalukasz.behavioral.strategy.concretestrategy.DeepDive;
+import com.zawadalukasz.behavioral.strategy.concretestrategy.FlyRocketPower;
 import org.junit.Test;
 
 public class DuckTest {

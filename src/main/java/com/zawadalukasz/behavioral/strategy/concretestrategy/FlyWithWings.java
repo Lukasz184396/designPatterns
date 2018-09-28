@@ -1,5 +1,7 @@
-package com.zawadalukasz.behavioral.strategy;
+package com.zawadalukasz.behavioral.strategy.concretestrategy;
 
+
+import com.zawadalukasz.behavioral.strategy.abstractstrategy.FlyBehavior;
 
 public class FlyWithWings implements FlyBehavior {
     @Override

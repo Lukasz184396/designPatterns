@@ -1,5 +1,9 @@
 package com.zawadalukasz.behavioral.strategy;
 
+import com.zawadalukasz.behavioral.strategy.abstractstrategy.DiveBehavior;
+import com.zawadalukasz.behavioral.strategy.abstractstrategy.FlyBehavior;
+import com.zawadalukasz.behavioral.strategy.abstractstrategy.QuackBehavior;
+
 public abstract class Duck {
 
     FlyBehavior flyBehavior;

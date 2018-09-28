@@ -1,5 +1,9 @@
 package com.zawadalukasz.behavioral.strategy;
 
+import com.zawadalukasz.behavioral.strategy.concretestrategy.DiveShallow;
+import com.zawadalukasz.behavioral.strategy.concretestrategy.FlyWithWings;
+import com.zawadalukasz.behavioral.strategy.concretestrategy.Quack;
+
 public class MallardDuck extends Duck {
 
     public MallardDuck() {

@@ -1,4 +1,6 @@
-package com.zawadalukasz.behavioral.strategy;
+package com.zawadalukasz.behavioral.strategy.concretestrategy;
+
+import com.zawadalukasz.behavioral.strategy.abstractstrategy.FlyBehavior;
 
 public class FlyNoWay implements FlyBehavior {
     @Override
