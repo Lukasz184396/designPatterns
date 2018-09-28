@@ -4,6 +4,7 @@ public abstract class Duck {
 
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
+    DiveBehavior diveBehavior;
 
     public Duck() {
 
@@ -12,16 +13,16 @@ public abstract class Duck {
     public abstract void display();
 
 
-
     public void performFly() {
         flyBehavior.fly();
-    }
-    public void performFQuack() {
-        quackBehavior.quack();
     }
 
     public void setFlyBehavior(FlyBehavior fb) {
         flyBehavior = fb;
+    }
+
+    public void performFQuack() {
+        quackBehavior.quack();
     }
 
     public void setQuackBehavior(QuackBehavior qb) {
@@ -31,5 +32,13 @@ public abstract class Duck {
 
     public void swim() {
         System.out.println("All ducks float, even  decoys");
+    }
+
+    //added mew strategy without changing current strategies
+    public void performDive() {
+        diveBehavior.dive();
+    }
+    public void setDiveBehavior(DiveBehavior db) {
+        diveBehavior = db;
     }
 }

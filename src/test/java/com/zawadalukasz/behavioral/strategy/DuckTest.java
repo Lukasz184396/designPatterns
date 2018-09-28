@@ -8,7 +8,7 @@ public class DuckTest {
     public  void modelDuckTest() {
         Duck model = new ModelDuck();
         model.performFly();                             //not flying
-        model.setFlyBehavior(new FlyRocketPower());     //change the stategy of flying
+        model.setFlyBehavior(new FlyRocketPower());     //change the strategy of flying
         model.performFly();                             //flying like a rocket
     }
 
@@ -17,5 +17,12 @@ public class DuckTest {
         Duck mallard = new MallardDuck();
         mallard.performFQuack();
         mallard.performFly();
+    }
+    @Test
+    public  void shouldDeepDive() {
+        Duck mallard = new MallardDuck();
+        mallard.performDive();                      //shallow diving
+        mallard.setDiveBehavior(new DeepDive());    // duck after training can dive deeper (change the strategy of dive
+        mallard.performDive();
     }
 }
