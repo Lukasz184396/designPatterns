@@ -1,2 +1,2 @@
 # designPatterns
-Lern desing patterns
+Learn desing patterns
