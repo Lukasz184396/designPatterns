@@ -3,26 +3,23 @@ package com.zawadalukasz.behavioral.observer.impl;
 import com.zawadalukasz.behavioral.observer.abstraction.DisplayElement;
 import com.zawadalukasz.behavioral.observer.abstraction.Observer;
 
-public class CurrentConditionsDisplay implements Observer, DisplayElement {
+public class StatisticDisplay implements Observer, DisplayElement {
 
     private float temperature;
-    private float humidity;
     private WeatherData weatherData;
 
-    public CurrentConditionsDisplay(WeatherData weatherData) {
+    public StatisticDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
-
     @Override
     public void update(float temp, float humidity, float pressure) {
-        this.temperature = temp;
-        this.humidity = humidity;
+        temperature = temp;
         display();
     }
 
     public String display() {
-        return "Current conditions: " + temperature + "F degrees and " + humidity + " % humidity";
+        return "Poor version - display only temperature " + temperature;
     }
 }
