@@ -29,4 +29,18 @@ public class WeatherDataDisplayTest {
         String expected = "Poor version - display only temperature 50.0";
         assertEquals(expected, statisticDisplay.display());
     }
+
+    @Test
+    public void shouldNotNotifyRemovedObserver() {
+
+        WeatherData weatherData = new WeatherData();
+        StatisticDisplay statisticDisplay = new StatisticDisplay(weatherData);
+
+        weatherData.setMeasurements(50, 25, 1000);
+        weatherData.removeObserver(statisticDisplay);
+
+        weatherData.setMeasurements(1000, 1000, 1000);
+        String expected = "Poor version - display only temperature 50.0";
+        assertEquals(expected, statisticDisplay.display());
+    }
 }
